@@ -1,0 +1,13 @@
+#requireResource("com.roumanoff.svgweb4a:svgweb")
+
+<!--[if IE]>
+<object src="${urlPath}" classid="image/svg+xml"
+        width="${width}" height="${height}"
+        id="${id}">
+<![endif]-->
+<!--[if !IE]>-->
+<object data="${urlPath}" type="image/svg+xml" 
+        width="${width}" height="${height}"
+        id="${id}">
+<!--<![endif]-->
+</object>

@@ -1,0 +1,22 @@
+<tr>
+    <td>
+        <pre>
+{svgweb4a:file=[attachment]|width=[width]|height=[height]}[content]{svgweb4a}
+        </pre>
+    </td>
+    <td>
+        <p></p>
+        <ul>
+            <li>
+                <ul>
+                    <li>file &mdash; attachment file name</li>
+                    <li>width &mdash; width of the drawing in px (default to 500px)</li>
+                    <li>height &mdash; height of the drawingin px (default to 500px)</li>
+                    <li>content &mdash; inline svg content</li>
+                </ul>
+            </li>
+        </ul>
+        <p>If both file and content are specified, file takes precedence and content is ignored. See svgweb documentation for inline content format.<p>
+        <p>The default parameter name is file<p>
+    </td>
+</tr>

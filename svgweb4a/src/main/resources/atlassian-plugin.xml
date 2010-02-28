@@ -1,0 +1,29 @@
+<atlassian-plugin key="${project.groupId}.${project.artifactId}" name="${project.artifactId}" plugins-version="2">
+	<plugin-info>
+		<description>${project.description}</description>
+		<version>${project.version}</version>
+		<vendor name="${project.organization.name}" url="${project.organization.url}" />
+	</plugin-info>
+
+	<macro name="svgweb4a" class="com.roumanoff.svgweb4a.SvgWeb4a" key="svgweb4a">
+		<description>This macro enables svg content</description>
+
+		<resource type="velocity" name="help" location="templates/help/help.vm">
+			<param name="help-section" value="confluence" />
+		</resource>
+		<category name="confluence-content" />
+		<parameters>
+			<parameter name="file"   type="string" />
+			<parameter name="height" type="string" />
+			<parameter name="width"  type="string" />
+		</parameters>
+	</macro>
+
+	<web-resource key="svgweb" name="svgweb 1.0">
+		<resource type="download" name="svg.js" location="svgweb/svg-uncompressed.js">
+		  <param name="batch" value="false"/>
+		</resource>
+		<resource type="download" name="files/" location="svgweb" />
+	</web-resource>
+
+</atlassian-plugin>

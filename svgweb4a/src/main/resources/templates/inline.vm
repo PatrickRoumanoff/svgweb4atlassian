@@ -1,0 +1,5 @@
+#requireResource("com.roumanoff.svgweb4a:svgweb")
+
+<script type="image/svg+xml">
+   $body
+</script>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.roumanoff</groupId>
+    <artifactId>svgweb4a</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <scm>
+    	<connection>scm:svn:https://svn.atlassian.com/svn/public/contrib/confluence/svgwev4a-plugin/trunk</connection>
+    	<developerConnection>scm:svn:https://proumanoff@svn.atlassian.com/svn/public/contrib/confluence/svgwev4a-plugin/trunk</developerConnection>
+    	<url>https://svn.atlassian.com/svn/public/contrib/confluence/svgwev4a-plugin</url>
+    </scm>
+
+    <organization>
+        <name>Patrick Roumanoff</name>
+        <url>http://roumanoff.com/</url>
+    </organization>
+
+    <name>svgweb4a</name>
+    <description>This is the com.roumanoff:svgweb4a plugin for Atlassian Confluence. It enables svg content in confluence using the google library svgweb.</description>
+    <packaging>atlassian-plugin</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.6</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.atlassian.confluence</groupId>
+            <artifactId>confluence</artifactId>
+            <version>${confluence.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.atlassian.confluence.plugin</groupId>
+            <artifactId>func-test</artifactId>
+            <version>2.1.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.atlassian.maven.plugins</groupId>
+                <artifactId>maven-confluence-plugin</artifactId>
+                <version>3.0.5</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <productVersion>${confluence.version}</productVersion>
+                    <productDataVersion>${confluence.data.version}</productDataVersion>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <properties>
+    	<module.name>com.roumanoff.svgweb4a</module.name>
+        <confluence.version>3.0.1</confluence.version>
+        <confluence.data.version>3.0</confluence.data.version>
+    </properties>
+
+</project>
