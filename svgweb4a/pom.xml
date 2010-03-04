@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.roumanoff</groupId>
     <artifactId>svgweb4a</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <scm>
-    	<connection>scm:svn:https://studio.plugins.atlassian.com/svn/SWA/tags/svgweb4a-1.0.0</connection>
-    	<developerConnection>scm:svn:https://studio.plugins.atlassian.com/svn/SWA/tags/svgweb4a-1.0.0</developerConnection>
-    	<url>https://svn.atlassian.com/svn/public/contrib/confluence/svgwev4a-plugin/tags/svgweb4a-1.0.0</url>
+    	<connection>scm:svn:https://studio.plugins.atlassian.com/svn/SWA/trunk/svgweb4a</connection>
+    	<developerConnection>scm:svn:https://studio.plugins.atlassian.com/svn/SWA/trunk/svgweb4a</developerConnection>
+    	<url>https://svn.atlassian.com/svn/public/contrib/confluence/svgwev4a-plugin</url>
     </scm>
 
     <organization>
